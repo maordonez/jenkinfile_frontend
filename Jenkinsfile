@@ -10,7 +10,7 @@ pipeline {
   }
 
   tools {
-    node 'node_14_17_5'
+    nodejs  'node_14_17_5'
   }
 
   stages {
