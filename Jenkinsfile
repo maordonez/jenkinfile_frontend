@@ -60,12 +60,6 @@ pipeline {
 
       }
     }
-    
-      stage('deploy') {
-         steps{
-             
-         }
-     }
 
   }
 
