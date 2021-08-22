@@ -1,8 +1,6 @@
 pipeline {
 
-  agent {
-    label 'Slave_Induccion'
-  }
+  agent any
 
   options {
     buildDiscarder(logRotator(numToKeepStr: '3'))
