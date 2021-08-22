@@ -55,7 +55,7 @@ pipeline {
         archiveArtifacts artifacts: 'dist.zip', fingerprint: true
         
         sshagent(credentials: ['ssh-credentials-id']){
-            scp ./dist.zip user@51.79.51.89:/home/centos
+            sh 'scp ./dist.zip user@51.79.51.89:/home/centos'
         }
 
       }
